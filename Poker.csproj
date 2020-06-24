@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2EBF7ACB-EF9C-4FC2-8431-F0D0F7836492}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Poker</RootNamespace>
+    <AssemblyName>Poker</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>smile.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="WindowNewName.xaml.cs">
+      <DependentUpon>WindowNewName.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="WindowNewName.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cards\Cards_01T02.jpg" />
+    <Resource Include="Cards\Cards_02C02.jpg" />
+    <Resource Include="Cards\Cards_03P02.jpg" />
+    <Resource Include="Cards\Cards_04H02.jpg" />
+    <Resource Include="Cards\Cards_05T03.jpg" />
+    <Resource Include="Cards\Cards_06C03.jpg" />
+    <Resource Include="Cards\Cards_07P03.jpg" />
+    <Resource Include="Cards\Cards_08H03.jpg" />
+    <Resource Include="Cards\Cards_09T04.jpg" />
+    <Resource Include="Cards\Cards_10C04.jpg" />
+    <Resource Include="Cards\Cards_11P04.jpg" />
+    <Resource Include="Cards\Cards_12H04.jpg" />
+    <Resource Include="Cards\Cards_13T05.jpg" />
+    <Resource Include="Cards\Cards_14C05.jpg" />
+    <Resource Include="Cards\Cards_15P05.jpg" />
+    <Resource Include="Cards\Cards_16H05.jpg" />
+    <Resource Include="Cards\Cards_17T06.jpg" />
+    <Resource Include="Cards\Cards_18C06.jpg" />
+    <Resource Include="Cards\Cards_19P06.jpg" />
+    <Resource Include="Cards\Cards_20H06.jpg" />
+    <Resource Include="Cards\Cards_21T07.jpg" />
+    <Resource Include="Cards\Cards_22C07.jpg" />
+    <Resource Include="Cards\Cards_23P07.jpg" />
+    <Resource Include="Cards\Cards_24H07.jpg" />
+    <Resource Include="Cards\Cards_25T08.jpg" />
+    <Resource Include="Cards\Cards_26C08.jpg" />
+    <Resource Include="Cards\Cards_27P08.jpg" />
+    <Resource Include="Cards\Cards_28H08.jpg" />
+    <Resource Include="Cards\Cards_29T09.jpg" />
+    <Resource Include="Cards\Cards_30C09.jpg" />
+    <Resource Include="Cards\Cards_31P09.jpg" />
+    <Resource Include="Cards\Cards_32H09.jpg" />
+    <Resource Include="Cards\Cards_33T10.jpg" />
+    <Resource Include="Cards\Cards_34C10.jpg" />
+    <Resource Include="Cards\Cards_35P10.jpg" />
+    <Resource Include="Cards\Cards_36H10.jpg" />
+    <Resource Include="Cards\Cards_37TA.jpg" />
+    <Resource Include="Cards\Cards_38CA.jpg" />
+    <Resource Include="Cards\Cards_39PA.jpg" />
+    <Resource Include="Cards\Cards_40HA.jpg" />
+    <Resource Include="Cards\Cards_41TJ.jpg" />
+    <Resource Include="Cards\Cards_42CJ.jpg" />
+    <Resource Include="Cards\Cards_43PJ.jpg" />
+    <Resource Include="Cards\Cards_44HJ.jpg" />
+    <Resource Include="Cards\Cards_45TQ.jpg" />
+    <Resource Include="Cards\Cards_46CQ.jpg" />
+    <Resource Include="Cards\Cards_47PQ.jpg" />
+    <Resource Include="Cards\Cards_48HQ.jpg" />
+    <Resource Include="Cards\Cards_49TK.jpg" />
+    <Resource Include="Cards\Cards_50CK.jpg" />
+    <Resource Include="Cards\Cards_51PK.jpg" />
+    <Resource Include="Cards\Cards_52HK.jpg" />
+    <Resource Include="Cards\Cards_54JOK.jpg" />
+    <Resource Include="Cards\Cards_53EMP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="smile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\TextFileRecord.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
